@@ -16,11 +16,13 @@ html {
 html {
     position: relative;
     min-height: 100%;
+    
 }
 
 body {
     justify-content: center;
     background-color: #FEF6F2;
+    
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -257,13 +259,68 @@ aside {
     top: 20px;
     width: 250px;
     margin-right:0px;
+    margin-top:40px;
     
 }
 
 .prop {
     align-content: center;
     margin-bottom: 20px;
-    border-top-left-radius: 10px
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     color: white;
+}
+
+.product-card {
+    border: none;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+    }
+
+.filter-box {
+    background: #ffe4ec;
+    padding: 20px;
+    border-radius: 16px;
+    float:left;
+    margin-top:20px;
+    margin-left:10px;
+}
+
+.filter-btn {
+    background: #ffc0cb;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin:3px;
+}
+
+    .filter-btn:hover {
+        background: #ff99b9;
+        color: white;
+    }
+
+.qty-btn {
+    background-color: #ffc0cb;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+    .qty-btn:hover {
+        background-color: #ff99b9;
+        color: white;
+    }
+
+.qty-input {
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
 }

@@ -4,5 +4,236 @@
 }
 
 @section hmabout{
-    
+    <aside class="filter-box position-sticky" style="top: 20px;">
+        <h5 class="mb-3">Filters</h5>
+
+        <button class="btn filter-btn w-100 mb-2" onclick="filterProducts('all')">
+          All
+        </button>
+
+        <button class="btn filter-btn w-100 mb-2" onclick="filterProducts('chocolate')">
+          Chocolate
+        </button>
+
+        <button class="btn filter-btn w-100 mb-2" onclick="filterProducts('strawberry')">
+          Strawberry
+        </button>
+
+        <button class="btn filter-btn w-100 mb-2" onclick="filterProducts('vanilla')">
+          Vanilla
+        </button>
+
+      </aside>
+    <div class="container mt-4" style="margin-top:-40px;">
+<div class="row g-4">
+
+<!-- Card 1 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+
+<img src="/images/products/chococone.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Chocolate Cone</h5>
+<p class="card-text">
+Rich and creamy chocolate ice cream served in a crispy waffle cone.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Chocolate | Cocoa | Creamy</p>
+
+<div class="mt-auto" style="float:left;">
+<span class="badge bg-success">Popular</span>
+
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/strawberry.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Strawberry Delight</h5>
+<p class="card-text">
+Fresh strawberry ice cream with real fruit chunks for a juicy taste.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Strawberry | Fruity | Sweet</p>
+<div class="mt-auto">
+<span class="badge bg-success">Fresh</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/vanilla.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Vanilla Classic</h5>
+<p class="card-text">
+Smooth and timeless vanilla ice cream made with premium ingredients.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Vanilla | Creamy | Classic</p>
+<div class="mt-auto">
+<span class="badge bg-success">Best Seller</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/fruitpop.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Fruit Popsicle</h5>
+<p class="card-text">
+Refreshing frozen treat made with real fruit juices.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Mango | Orange | Mixed Fruit</p>
+<div class="mt-auto">
+<span class="badge bg-success">Cool</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/chocomillkshake.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Chocolate Milkshake</h5>
+<p class="card-text">
+Thick and creamy milkshake blended with rich chocolate syrup.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Chocolate | Milk | Smooth</p>
+<div class="mt-auto">
+<span class="badge bg-success">Creamy</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/berry.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Berry Smoothie</h5>
+<p class="card-text">
+Healthy and refreshing smoothie made with mixed berries.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Blueberry | Strawberry | Raspberry</p>
+<div class="mt-auto">
+<span class="badge bg-success">Healthy</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/cone.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Waffle Cone Special</h5>
+<p class="card-text">
+Crunchy waffle cone filled with your favorite ice cream scoops.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Custom | Chocolate | Vanilla</p>
+<div class="mt-auto">
+<span class="badge bg-success">Customizable</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/mango.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Mango Ice Cream</h5>
+<p class="card-text">
+Sweet and tropical mango ice cream made from real mango pulp.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Mango | Tropical | Sweet</p>
+<div class="mt-auto">
+<span class="badge bg-success">Seasonal</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="card shadow-sm h-100" style="border-radius:15px;">
+<img src="/images/products/sundae.jpg" class="card-img-top" style="height:200px; object-fit:cover;">
+<div class="card-body d-flex flex-column">
+<h5 class="card-title" style="color:hotpink;">Ice Cream Sundae</h5>
+<p class="card-text">
+Delicious sundae topped with chocolate syrup, nuts, and cherries.
+</p>
+<h6><b>Flavour:</b></h6>
+<p class="text-muted">Mixed | Chocolate | Nuts</p>
+<div class="mt-auto">
+<span class="badge bg-success">Premium</span>
+<div class="d-flex align-items-center gap-2" style="float:right;">
+  <button class="btn qty-btn" onclick="decreaseQty(this)">−</button>
+  <input type="text" value="0" class="form-control text-center qty-input">
+  <button class="btn qty-btn" onclick="increaseQty(this)">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
 }
