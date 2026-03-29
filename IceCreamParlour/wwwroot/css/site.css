@@ -38,6 +38,10 @@ body {
     font-family: 'MyCustomFont1';
     src: url('/fonts/Wonderbar.ttf') format('opentype');
 }
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('/fonts/FloryannaDemo.ttf') format('opentype');
+}
 
 .myname1 {
     color: #0d6efd;
@@ -51,6 +55,12 @@ body {
     color:#fef6f2;
     font-size: 1.5rem;
     
+}
+
+.icecreamintro {
+    font-family: 'MyCustomFont2', sans-serif;
+    color: #e88ea2;
+    font-size: 4rem;
 }
 
 .profile-card {
@@ -205,12 +215,55 @@ body {
     background-image: url("/images/drip4.png");
     background-size: contain;
     background-position: center;
+   
     
     
 }
 
 .icecream{
-    margin-top:-60px;
+    height:auto;
+    width:auto;
+    
     
 }
 
+.btnunite{
+    background-color:#f493aa;
+    border-radius:20px;
+    float:left;
+    
+}
+.btn{
+    border:none;
+    bacground-color:none;
+    border-radius:20px;
+    color:white;
+    margin-top:-6px;
+    
+}
+.howitmade{
+    border:solid 1px #f493aa;
+    border-radius:20px;
+    background-color:white;
+    padding:10px 5px 10px 5px;
+}
+    .howitmade:hover {
+        color: #f493aa;
+    }
+
+aside {
+    position: fixed;
+    float:right;
+    top: 20px;
+    width: 250px;
+    margin-right:0px;
+    
+}
+
+.prop {
+    align-content: center;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px;
+    color: white;
+}
